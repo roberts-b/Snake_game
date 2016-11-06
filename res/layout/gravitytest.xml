@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/snake" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/uzraksts" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvUp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bNolasit"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Start Game" />
+
+        <Button
+            android:id="@+id/bhighsc"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Highscore" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:text="ToggleButton"
+            android:textOff="Aksellometer: OFF"
+            android:textOn="Aksellometer: ON " />
+
+        <Button
+            android:id="@+id/bExit"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Exit" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvUp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView2"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+</RelativeLayout>

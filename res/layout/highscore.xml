@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/snake" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Highscores:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bClear"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/tv01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:gravity="left"
+            android:text="Highscores:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/tv02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:gravity="left"
+            android:text="Highscores:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/tv03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:gravity="left"
+            android:text="Highscores:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/tv04"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:gravity="left"
+            android:text="Highscores:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/tv05"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:gravity="left"
+            android:text="Highscores:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="20"
+        android:text="Clear highscores" />
+
+</RelativeLayout>
